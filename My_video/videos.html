@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Video Edits</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+        }
+        body {
+            display: flex;
+            margin: 0 auto;
+            width: fit-content;
+            justify-content: center;
+            background-color: #121212;
+            color: #e0f11f;
+            text-transform: uppercase;
+            font-family: "Big Shoulders Display", serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            overflow-x: hidden;
+        }
+        .container {
+            padding: 20px;
+        }
+        h1 {
+            margin-right: 10px;
+            position: absolute;
+            z-index: 2;
+            background-color: #121212;
+            padding: 20px;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        .video-scroll {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            height: 80vh;
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;
+            position: relative;
+        }
+        .video {
+            box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.445);
+            width: fit-content;
+            height: 70dvh;
+            max-width: 600px;
+            border-radius: 10px;
+            scroll-snap-align: center;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #e0f11f;
+            color: #121212;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .back-button:hover {
+            background-color: #3b3b3b;
+        }
+        .video-scroll::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .video-scroll::-webkit-scrollbar-track {
+            background: #1e1e1e;
+            border-radius: 10px;
+        }
+
+        .video-scroll::-webkit-scrollbar-thumb {
+            background: #ffffff;
+            border-radius: 10px;
+            border: 2px solid #121212;
+        }
+
+        .video-scroll::-webkit-scrollbar-thumb:hover {
+            background: #cccccc;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Edited videos</h1>
+        <div class="video-scroll">
+            <video class="video" controls loop>
+                <source src="motercycle.mp4" type="video/mp4">
+            </video>
+            <video class="video" controls loop>
+                <source src="sk_osmm-20250225-0001.mp4" type="video/mp4">
+            </video>
+            <video class="video" controls  loop>
+                <source src="sk_osmm-20250225-0002.mp4" type="video/mp4">
+            </video>
+            <video class="video" controls loop>
+                <source src="sk_osmm-20250225-0003.mp4" type="video/mp4">
+            </video>
+        </div>
+        <a href="../index.html" class="back-button">Back to Portfolio</a>
+    </div>
+</body>
+</html>
