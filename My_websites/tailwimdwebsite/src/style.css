@@ -1,0 +1,88 @@
+
+.i {
+    animation: rotate .3s cubic-bezier(0,.5,.04,.98) forwards;
+    transition: all .3s cubic-bezier(0,.5,.04,.98);
+}
+.x { 
+    animation: transformation .3s cubic-bezier(0,.5,.04,.98) forwards;
+    transition: all .3s cubic-bezier(0,.5,.04,.98);
+}
+.y {
+    opacity: 0;
+}
+.z {
+    animation: transformation_neg .3s cubic-bezier(0,.5,.04,.98) forwards;
+    transition: all .3s cubic-bezier(0,.5,.04,.98);
+}
+li {
+    cursor: pointer;
+    color: #303030;
+    font-weight: 600;
+}
+li:hover {
+    color: #ffd000;
+}
+.list:hover {
+    color: black;
+}
+body {
+    overflow-x: hidden;
+}
+@keyframes transformation {
+    0%{
+        transform: none;
+    }
+    100% {
+        transform: rotate(-45deg) translateY(14px);
+    }
+}
+@keyframes transformation_neg {
+    0%{
+        transform: none;
+    }
+    100% {
+        transform: rotate(45deg) translateY(-13px);
+    }
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(180deg) translateX(-10px);
+    }
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    border-top: 1px solid #00000063;
+    border-left: 1px solid #00000063;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s cubic-bezier(.39,0,.33,1);
+}
+@media  only screen and (min-width:1025px) {
+    .menu{
+        display: none;
+    }
+    
+}
+.get-out{
+    transform: translateX(100%) translateY(-110%) scale(0); 
+    border: none;
+    opacity: 0;
+}
+.bring_back {
+    transform: translateX(0) translateY(0) scale(1);
+    opacity: 1;
+}
+.searchdiv {
+    background-color: #e3f0fcd2;
+}
+.searchdiv > p {
+    color: #3b3b3b;
+}
