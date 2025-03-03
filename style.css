@@ -6,8 +6,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-     -webkit-tap-highlight-color: transparent;
-    touch-action: manipulation;
+    -webkit-user-select: none;
+}
+*:focus{
+    outline: none;
+    box-shadow: none;
+    -webkit-tap-highlight-color: transparent;
 }
 .dark{
     --primary-color: #e0f11f;
@@ -40,8 +44,7 @@ a {
 }
 body{
     padding: 20px;
-    width: fit-content;
-    max-width: 1280px;
+    max-width: 1024px;
     overflow-x: hidden;
     position: relative;
     background-color: var(--secondary-color);
@@ -178,7 +181,6 @@ main{
 .hero{
     scroll-margin-top: 90px;
     width: 100%;
-    max-width: 353px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -262,6 +264,7 @@ span {
 }
 .star_icon {
     fill: var(--primary-color);
+    display: block;
 }
 .personal__description {
     opacity: 0;
@@ -305,7 +308,6 @@ span {
     align-items: center;
     gap: 40px;
     width: 100%;
-    max-width: 353px;
     position: relative;
 }
 .about__head{
@@ -327,7 +329,7 @@ span {
 }
 .about__head--right{
     display: flex;
-    width: 100%;
+    flex: 1;
 }
 .about__head:hover .about__line--inner {
     margin-right: clamp(10px, 3vw, 20px);
@@ -345,18 +347,20 @@ span {
 .about__head--line {
     height: 4px;
     flex: 1 calc(50%);
+    width: 100%;
     background-color: var(--faded-color);
     display: flex;
 }
 .about__line--inner {
     height: 4px;
-    flex: 1 calc(35% - 20px);
+    max-width: 40px;
+    flex: 1 calc(35%);
     background-color: var(--primary-color);
     transition: all 0.2s cubic-bezier(0,.51,.4,.99);
 }
 .about__line--arrow {
     display: flex;
-    flex: 1 calc(15%);
+    width: 40px;
     position: relative;
 }
 .about__arrow{
@@ -377,14 +381,15 @@ span {
     transition: all 0.3s cubic-bezier(0,.58,.35,.99);
 }
 .about__main {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-.about__main--top{
     animation: appear 1s cubic-bezier(0,.42,.47,.99);
     animation-timeline: view();
     animation-range: entry 0% cover 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: relative;
+}
+.about__main--top{
     color: var(--faded-text);
     font-size: 18px;
     font-weight: 400;
@@ -392,9 +397,6 @@ span {
     text-align: start;
 }
 .about__main--middle{
-    animation: appear 1s cubic-bezier(0,.42,.47,.99);
-    animation-timeline: view();
-    animation-range: entry 0% cover 30%;
     color: var(--text-color);
     font-size: 14px;
     font-weight: 400;
@@ -467,7 +469,13 @@ span {
     align-items: center;
     gap: 40px;
     width: 100%;
-    max-width: 353px;
+}
+.project__main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
 }
 .links {
     display: flex;
@@ -475,7 +483,6 @@ span {
     align-items: center;
     gap: 24px;
     width: 100%;
-    max-width: 353px;
 }
 .project__videos{
     animation: appear 1s cubic-bezier(0,.42,.47,.99);
@@ -484,7 +491,6 @@ span {
     position: relative;
     overflow: hidden;
     width: 100%;
-    max-width: 353px;
     height: 240px;
 }
 .project__videos::before {
@@ -562,7 +568,12 @@ span {
     align-items: center;
     gap: 40px;
     width: 100%;
-    max-width: 353px;
+}
+.experience__cards {
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 .experience__card{
     animation: appear 1s cubic-bezier(0,.42,.47,.99);
@@ -602,7 +613,6 @@ span {
     align-items: center;
     gap: 40px;
     width: 100%;
-    max-width: 353px;
 }
 .bottom {
     animation: appear 1s cubic-bezier(0,.42,.47,.99);
@@ -621,8 +631,9 @@ span {
     animation-timeline: view();
     animation-range: entry 0% cover 10%;
     min-width: 140px;
+    width: 100%;
     display: flex;
-    flex: 1 calc(50% - 20px);
+    flex-basis: calc(50% - 20px);
     color: var(--icon-text);
     font-family: "Big Shoulders Display", serif;
     font-size: 32px;
@@ -771,5 +782,76 @@ span {
     100% {
         opacity: 1;
         scale: 1;
+    }
+}
+@media (min-width: 810px){
+    main{
+        padding: 40px;
+        padding-top: 90px;
+    }
+    .hero {
+        font-size: 14px;
+    }
+    .main__name {
+        padding-top: 20px;
+        font-size: 260px;
+        letter-spacing: -5.2px;
+        line-height: 245px;
+    }
+    .my__image {
+        height: 280px;
+        width: 176px;
+        border-radius: 85px;
+    }
+    .personal__description{
+        font-size: 22px;
+        line-height: 39.6px;
+        margin-top: 44px;
+    }
+    .star {
+        margin-top: 44px;
+        padding: 0;
+        scale: 1.32;
+    }
+    .scroll__animation{
+        margin-top: 44px;
+    }
+    .about__main {
+        display: grid;
+        gap: 56px;
+        grid-template-columns: calc(50% - 56px);
+        grid-template-rows: auto;
+        position: relative;
+    }
+    .about__main--top {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        font-size: 20px;
+        position: sticky;
+        top: 90px;
+        overflow-y: auto;
+    }
+    .about__main--middle {
+        font-size: 15px;
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+    }
+    .about__main--bottom {
+        grid-column: 2 / 3;
+    }
+    .project__main {
+        flex-wrap: nowrap;
+    }
+    .experience__card {
+        flex-basis: calc(50% - 40px);
+    }
+    .card__heading {
+        font-size: 20px;
+    }
+    .experience__card--bottom {
+        font-size: 16px;
+    }
+    .social__media--box {   
+    flex-basis: calc(25% - 20px);
     }
 }
