@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+</html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CSS Projects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+    html {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    body {
+        background-color: #121212;
+        color: white;
+        font-family: "DM Sans", serif;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 20px;
+        width: fit-content;
+        overflow-x: hidden;
+    }
+    h1{
+        color: #e0f11f;
+        font-size: clamp(50px, 32vw , 120px);
+        letter-spacing: -1.2px;
+        line-height: 110px;
+        font-family: "Big Shoulders Display", serif;
+    }
+    h3{
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.project-card {
+    color: #121212;
+    width: 100%;
+    max-width: 400px;
+    min-width: 250px;
+    padding: 20px;
+    background: #e0f11f;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.back-button {
+    padding: 10px;
+    background: white;
+    width: 40%;
+    margin: 0 auto;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+</style>
+<body>
+    <h1>Practice Projects</h1>
+    <div class="projects-container">
+        <div class="project-card">
+            <h3>Anchor bottom line animation</h3>
+            <a href="anchor line animation/index.html">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>load Animations</h3>
+            <a href="Animation Day 01/index.html">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Button Animation</h3>
+            <a href="Button Animation/index.html">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>NFT - MarketPlace</h3>
+            <a href="NFT-Marketplace/index.html">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Portfolio</h3>
+            <a href="../index.html">View Project</a>
+        </div>
+    </div>
+    <a href="../index.html" class="back-button">Back to Portfolio</a>
+</body>
+</html>

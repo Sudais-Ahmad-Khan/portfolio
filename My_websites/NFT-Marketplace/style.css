@@ -1,0 +1,1635 @@
+html{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+* {
+    flex-grow: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+    background-color: #2b2b2b;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+.none {
+    display: none;
+}
+.none > p {
+    display: none;
+}
+.none > img {
+    display: none;
+}
+.navbar {
+    height: 100px;
+    width: 94%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navoptions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 30%; 
+}
+.tab_option {
+    display: none;
+}
+.menu {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/* HERO SECTION */
+.herosection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heroframe {
+    height: 544px;
+    display: flex;
+    gap: 10px;
+    width: 82%;
+}
+.herotext {
+    width: 50%;
+    gap: 20px     ;
+    display: flex;
+    flex-direction: column;
+}
+.headline {
+    height: 63.98%;
+    font-size: 67px;
+    font-weight: 600;
+}
+.subhead {
+    font-size: 22px;
+    font-weight: 400;
+    height: 30.26%;
+}
+button{
+    height: 60px;
+    background-color: #a259ff;
+    border: 0px;
+    border-radius:20px ;
+    padding: 0px 50px 0px 50px;
+    gap: 12px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+.getstarted {
+     font-size: 16px;
+     font-weight: 600;
+     line-height: 22.4px;
+}
+.additionalinfo {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    height: 77px;
+}
+.item {
+    height: 100%;
+    width: 150px;
+    margin-top: 20px;
+}
+.x {
+    display: flex;
+    flex-direction: column;
+    align-items: bottom;
+
+}
+.num {
+    font-size: 28px;
+    font-weight: 700;
+}
+.desc {
+    font-size: 22.99px;
+    font-weight: 400;
+}
+
+.highlight {
+    display: block;
+    width: 50%;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.imageplace {
+    height: 80%;
+    width: 100%;
+}
+
+.imageplace > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+.textframe {
+    height: 20%;
+    width: 100%;
+    background-color: #3B3B3B;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.artistcard {
+    display: flex;
+    gap: 10px;
+    width: 92%;
+    align-items: center;
+}
+.spacewalking {
+    width: 92%;
+    font-size: 22px;
+    font-weight: 600;
+}
+/*Trending Collection*/
+.trendingcollection {
+    width: 100%;
+    gap: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sectionheadline {
+    width: 82%;
+    height: 10.8%;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.secheading {
+    font-size: 38px;
+    font-weight: 600;
+}
+.secdescription {
+    font-size: 22px;
+    font-weight: 400;
+}
+.sectionCards {
+    width: 82%;
+    height: 62.8%;
+    display: flex;
+    gap: 30px;
+}
+.card {
+    width: 31.4%;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.photos {
+    height: 84.8%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.primarypic {
+    height: 76.7441%;
+    width: 100%;
+}
+.scrollpic {
+    height: 23.2558%;
+    display: flex;
+    gap: 15px;
+}
+.picsinfo {
+    height: 12.39%;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.primarypic > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.pics {
+    width: 30.30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pics > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.pics > p {
+    font-size: 22px;
+    font-weight: 700;
+}
+.u {
+    background-color: #a259ff;
+}
+.picsinfo_name {
+    font-size: 22px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+.picsinfo_usercard {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+/*Top Creatures*/
+.TopCreators {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+.sectheadline {
+    width: 82%;
+    height: 8.39%;
+    display: flex;
+    
+}
+.artist_card_grid {
+    width: 82%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.sectionhead {
+    width: 67%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.sectbutton > button {
+    border: 2px solid #a259ff;
+    background-color: transparent;
+    font-size: 16px ;
+    font-weight: 600px;
+    padding: 0px 50px 0px 50px;
+}
+.sectbutton {
+    width: 33%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: end;
+}
+.sectheading {
+    flex: 1;
+    font-size: 38px;
+    font-weight: 600;
+    
+    display: flex;
+    align-items: center;
+}
+.sectsubhead {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    font-size: 22px;
+    font-weight: 400;
+}
+.creat {
+    flex: 1  calc(25% - 30px );
+    background-color: #3B3B3B;
+    border-radius: 20px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.artist_avatar {
+    width: 82.3%;
+    height: 50.42%;
+    display: flex;
+    gap: 10px;
+    position: relative;
+}
+.artist_info {
+    width: 82.3%;
+    height: 24.4%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.index{
+    position: absolute;
+    background-color: #2b2b2b ;
+    min-height: 30px;
+    min-width: 30px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #858584;
+}
+.index > p {
+    object-fit: cover;
+}
+.artist_profile {
+    height: 100%;
+    width: 100%;
+}
+.artist_profile > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.dish_studio {
+    height: 53.4% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+.additonal_info {
+    height: 37.3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 400;
+    gap: 5px;
+
+}
+.bold {
+    color: #858584;
+}
+
+/*Browse Catogories*/
+.browsecategories {
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.b_headlines {
+    width: 82%;
+    height: 5.2%;
+    font-size: 38px;
+    font-weight: 600;
+}
+.b_cards_grid {
+    width: 82%;
+    height: 76.7%;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 30px;
+}
+.b_cards {
+    flex: 1 1 calc(25% - 30px);
+    display: flex;
+    flex-direction: column;
+}
+.b_avator {
+    width: 100%;
+    height: 79.95%;
+}
+.b_avator > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px ;
+}
+
+.b_name {
+    background-color: #3B3B3B;
+    width: 100%;
+    height: 24.1%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.b_name_text {
+    height: 40.8%;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+/*Discover more NFTs*/
+.Discovermore {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+.d_headline {
+    width: 82%;
+    height: 11.67%;
+    display: flex;
+    gap: 10px;
+}
+.d_Cards {
+    width: 82%;
+    height: 60.13%;
+    display : flex; 
+    gap: 30px;
+} 
+.di_cards {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.d_image {
+    width: 100%;
+    height: 63.1%;
+}
+.d_image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius:20px ;
+    border-top-right-radius: 20px;
+}
+.d_info {
+    background-color: #3B3B3B;
+    width: 100%;
+    height: 36.89%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.d_artist_info {
+    width: 81.81%;
+    height: 34.7%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.d_add_info {
+    width: 81.81%;
+    height: 34.7%;
+    display: flex;
+}
+.d_name {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+.d_art_avatar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.d_art_avatar_img {
+    font-size: 16px;
+    font-weight: 400;
+    width: 8.89%;
+    height: 100%;
+}
+.d_art_avatar_img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.d_price {
+    flex: 1;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+}
+.d_highest {
+    flex: 1;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+}
+.di_price {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400;
+    color: #858584;
+}
+.d_ETH {
+    flex: 1.5;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+.di_highest {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400;
+    color: #858584;
+    justify-content: end;
+}
+.d_wETH {
+    flex: 1.5;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    justify-content: end;
+}
+/* Magic Mashrooms */
+.MagicMashrooms {
+    height: 640px;
+    width: 100%;
+    background-image: url(NFT\ background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.magicgradient {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #a259ff, #a259ff00);
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.frame240 {
+    padding-bottom: 60px;
+    height: 43.75%;
+    width: 82%;
+}
+.m_frame {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.m_artistinfo {
+    height: 100%;
+    width: 72%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.m_time {
+    height: 100%;
+    width: 28%;
+    display: flex;
+    align-items: end;
+}
+.ja {
+    background-color: #3B3B3B;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 400;
+    width:fit-content;
+    box-shadow: 0px 4px 4px #00000041;
+}
+
+.ad {
+    font-size: 51px;
+    font-weight: 600;
+    text-shadow: 0px 4px 4px #00000041;
+}
+.ee {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 27.27%;
+    width:  26.2%;
+}
+.m_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+}
+.m_button > button {
+    background-color: #ffffff;
+    color: black;
+    box-shadow: 0px 4px 4px #00000041;
+    width: 100%;
+}
+.m_text {
+    font-size: 16px;
+    font-weight: 600;
+}
+.m_auction {
+    height: 66.8%;
+    width: 100%;
+    background-color: #3B3B3B70;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px #00000041;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+.timeends {
+     font-size: 12px;
+     font-weight: 400;
+     width: 80%;
+}
+.m_times {
+    width: 80%;
+}
+.m_times > img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+/* HOW IT WORKS */
+
+.HOW_IT_WORKS {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
+.h_section_head {
+    width: 82%;
+    height: 12.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly ;
+}
+.h_cards {
+    width: 82%;
+    height: 439px;
+    display: flex;
+    gap: 30px;
+}
+.h_head {
+    font-size: 38px;
+    font-weight: 600;
+}
+.h_subhead {
+    font-size: 22px;
+    font-weight: 400;
+}
+.h_card {
+    background-color: #3B3B3B;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.s{
+    flex: 1;
+}
+.u {
+    flex: 1;
+}
+.d {
+    flex: 1;
+}
+.h_img {
+    height: 56.95%;
+    width: 75.76%;
+}
+.h_img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.h_desc {
+    height: 29.4%;
+    width: 81.82%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+
+.h_daeh {
+    height: 24.03%;
+    font-size: 22px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+.h_bus {
+    font-size: 16px ;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 68.22%;
+    text-align: center;
+}
+.joinnow {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.j_subcribe {
+    width: 82%;
+    height: 78.18% ;
+    background-color: #3B3B3B;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+.j_photo {
+    height: 72.1%;
+    width: 40.48%;
+    border-radius: 20px;
+}
+.j_description {
+    height: 63.25%;
+    width: 40.48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+}
+.j_desc {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.j_photo > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.j_headline {
+    font-size: 39px;
+    font-weight: 600;
+}
+.j_subline {
+    font-size: 22px;
+    font-weight: 400;
+}
+.j_button {
+    height: 60px;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+}
+.j_text {
+    padding-left:20px ;
+    background-color: #ffffff;
+    height: 60px;
+    width: 100%;
+    border-radius: 20px;
+    color: #3B3B3B;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+.j_butt {
+    position: absolute;
+    right: 0;
+    flex: 1;
+    display: flex;
+}
+.j_butt > img {
+    width: 211px;
+}
+.footer {
+    width: 100%;
+    height: 334px;
+    background-color: #3B3B3B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.f_info {
+    height: 191px;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    
+}
+.f_frame {
+    height: 33px;
+    width: 82%;
+    font-size: 12px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #cccccc;
+}
+hr {
+    border: 1px solid #858584;
+}
+.f_nft_head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: 600;
+
+}
+.f_nft {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 33.1%;
+    height: fit-content;
+
+}
+.f_nft_additional {
+    color: #cccccc;
+    font-size: 16px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 238px;
+}
+.f_community {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+.f_icon {
+    display: flex;
+    gap: 10px;
+    height: 32px;
+    width: 158px;
+}
+.f_icon > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.f_explore {
+    height: fit-content;
+    width: 24.31%;
+}
+.f_subscribe {
+    height: fit-content ;
+    width: 42.5%;
+}
+.f_explore {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.f_options {
+    height: 166px;
+    width: 133px;
+    display: flex;
+    flex-direction: column;
+}
+.f_options > p {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.f_desc {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.enable {
+    display: none;
+}
+.maro {
+    display: none;
+}
+.khan {
+    display: none;
+}
+@media screen and (max-width: 834px){
+    .body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .khan {
+        display: none;
+    }
+    .maro {
+        display: none;
+    }
+    .none {
+        display: none;
+    }
+    .none > p {
+        display: none;
+    }
+    .none > img {
+        display: none;
+    }
+    .navbar {
+        max-width: 834px;
+        padding-left: 50px;
+        padding-right: 50px;
+        height: 54px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .navoptions {
+        display: none;
+    }
+    .tab_option {
+        display: block;
+    }
+    .herosection {
+        max-width: 834px;
+    }
+    .heroframe {
+        height: 381px;
+    }
+    .herotext {
+        width: 330px;
+        height: 381px;
+    }
+    .headline {
+        font-size: 38px;
+        font-weight: 600;
+    }
+    .subhead {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .num {
+        font-size: 22px;
+        font-weight: 700;
+    }
+    .desc {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .imageplace {
+        height: 221px;
+        width: 100%;
+    }
+    .textframe {
+        height: 109px;
+    }
+    .trendingcollection {
+        
+        max-width: 834px;
+    }
+    .secheading {
+        font-size: 28px;
+        font-weight: 600;
+    }
+    .secdescription {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .i {
+        flex: 1;
+    }
+    .j {
+        flex: 1;
+    }
+    .k {
+        display: none;
+    }
+    .card {
+        height: 525px;
+        width: 330px;
+    }
+    .additonal_info {
+        justify-content: start;
+    }
+    .TopCreators {
+        max-width: 834px;
+        gap: 40px;
+    }
+    .sectheading {
+        font-size: 28px;
+        font-weight: 600;
+    }
+    .sectsubhead {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .creat {
+        flex-direction: row;
+        flex: 1 1 calc(50% - 30px);
+        padding: 20px;
+    }
+    .artist_avatar {
+        height: 60px;
+        width: 60px;
+        gap: 0px;
+    }
+    .artist_avatar > img {
+        object-fit: contain;
+    }
+    .artist_info {
+        height: 58px;
+        width: 66.63%;
+    }
+    .index {
+        margin-left: -10px;
+        margin-top: -10px;
+    }
+    .del {
+        display: none;
+    }
+    .sectheadline {
+        height: 71px;
+    }
+    .d_headline {
+        height: 71px;
+    }
+    .dish_studio {
+        justify-content: start;
+    }
+    .browsecategories {
+        max-width: 834px;
+    }
+    .b_headlines {
+        font-size: 28px;
+    }
+    .b_name_text {
+        font-size: 16px;
+    }
+    .b_row {
+        height: 209px;
+    }
+    .Discovermore {
+        max-width: 834px;
+        gap: 40px;
+    }
+    .d_Cards {
+        height: 469px;
+    }
+    .MagicMashrooms {
+        max-width: 834px;
+    }
+    
+    .HOW_IT_WORKS {
+        max-width: 834px;
+    }
+    .h_img {
+        height: 160px;
+        max-width: 160px;
+    }
+    .h_desc {
+        justify-content: center;
+        height: 117px;
+        max-width: 170px;
+    }
+    .enable {
+        display: none;
+    }
+    
+    .h_cards {
+        height: 337px;
+    }
+    .h_head {
+        font-size: 28px;
+    }
+    .h_subhead {
+        font-size: 16px;
+    }
+    .h_daeh {
+        font-size: 16px;
+    }
+    .h_bus {
+        font-size: 12px;
+        justify-content: center;
+    }
+    .joinnow {
+        max-width: 834px;
+    }
+    .j_subcribe {
+        max-width: 690px;
+        gap: 30px;
+    }
+    .j_photo {
+        max-width: 300px;
+        height: 280px;
+    }
+    .j_description {
+        max-width: 300px;
+        height: 280px;
+    }
+    .j_headline {
+        font-size: 28px;
+    }
+    .j_subline {
+        font-size: 16px;
+    }
+    .j_button {
+        display: flex;
+        flex-direction: column;
+        height: 108px;
+    }
+    .j_text {
+        position: unset;
+        height: 46px;
+    }
+    .j_butt {
+        position: unset;
+        height: 46px;
+        width: 100%;
+    }
+    .j_butt > button {
+        height: 46px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .footer {
+        max-width: 834px;
+        height: fit-content;
+        gap: 30px;
+    }
+    .f_info {
+        height: fit-content;
+    }
+
+    .ad {
+        font-size: 38px;
+    }
+    .ee {
+        width: 198px;
+    }
+    .m_frame {
+        height: 210px;
+        width: 100%;
+    }
+    .m_artistinfo {
+        width: 480px;
+        gap: 30px;
+    }
+    .m_time {
+        width: 295px;
+    }
+    .man {
+        display: block;
+    }
+    .f_info {
+        flex-direction: column;
+        height: fit-content;
+        gap: 30px;
+    }
+    
+    .f_nft {
+        width: 100%;
+        height: fit-content;
+    }
+    .f_explore {
+        width: 100%;
+        height: fit-content;
+    }
+    .f_nft_additional {
+        width: 100%;
+    }
+    .f_desc {
+        width: 100%;
+        gap: 10px;
+    }
+    .pop {
+        width: 100%;
+        padding-bottom: 0;
+    }
+    .pop > p {
+        padding: 0;
+    }
+    .be {
+        width: 100%;
+        height: 157px;
+    }
+    .egg {
+        width: 420px;
+        height: 60px;
+        gap: 0;
+        position: relative;
+        flex-direction: unset;
+    }
+    .white {
+        height: 60px;
+        width: 100%;
+    }
+    .purple {
+        height: 60px;
+        position: absolute;
+        width: 179px;
+        
+    }
+    .purple > button {
+        height: 60px;
+        width: 179px;
+    }
+}
+@media screen and (max-width:480px) {
+    html {
+        overflow-x: hidden;
+    }
+    body {
+        gap: 40px;
+        max-width: 480px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .navbar {
+        width: 90%;
+        padding: 0;
+        justify-content: space-between;
+    }
+    .herosection {
+        height: 706px;
+        align-items: start;
+        justify-content:center ;
+    }
+    .heroframe {
+        justify-content: center;
+    }
+    .herotext {
+        align-items: center;
+        height: fit-content;
+        width: 100%;
+    }
+    
+    .headline {
+        font-size: 28px;
+        height: fit-content;
+    }
+    .sectbutton {
+        width: 100%;
+    }
+    .sectbutton > button {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .subhead {
+        height: fit-content;
+    }
+    .additionalinfo {
+        width: 100%;
+    }
+    .highlight {
+        display: none;
+    }
+    .highlight > p {
+        display: none;
+    }
+    .highlight > img {
+        display: none;
+    }
+    .Exce {
+        width: 100%;
+        height: 100%;
+    }
+    .none {
+        display: block;
+        display: flex;
+    }
+    .none > p {
+        display: block;
+    }
+    .none > img {
+        display: block;
+    }
+    .trendingcollection {
+        justify-content: start ;
+        align-items: center;
+    }
+    .sectionCards {
+        height: fit-content;
+    }
+
+    .j {
+        display: none;
+        height: 505px;
+    }
+    .disable {
+        display: none;
+    }
+    .artist_card_grid {
+        width: 85%;
+        flex-direction: column;
+        gap:20px;
+        align-items: center;
+    }
+    .creat {
+        height: 100px;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    .TopCreators {
+        height: fit-content;
+        align-items: center;
+        justify-content: start;
+    }
+    .sectheadline {
+        align-items: center;
+        height: fit-content;
+        flex-direction: column;
+        width: 100%;
+        gap: 40px;
+    }
+    .sectionhead {
+        width: 85%;
+    }
+    .sectbutton {
+        width: 85%;
+        justify-content: center;
+    }
+    .enable {
+        display: block;
+        width: 85%;
+        flex-direction: column;
+        gap:20px;
+    }
+    .sectbutton > button {
+        width: 100%;
+    }
+    .browsecategories {
+        height: 1040px;
+    }
+    .b_cards_grid {
+        height: 918px;
+    }
+    .b_cards {
+        flex: 1 calc(50% - 20px);
+    }
+    .jeo {
+        display: none;
+    }
+    .maro {
+        display: block;
+    }
+    .Discovermore {
+        height: fit-content;
+        justify-content: start;
+        align-items: center;
+    }
+    .d_headline {
+        height: fit-content;
+        width: 85%;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap: 40px;
+    }
+    .nawaz {
+        height: fit-content;
+        width: 100%;
+    }
+    .secheading {
+        height: 39px;
+        width: 100%;
+    }
+    .sectsubhead {
+        height: 22px;
+        width: 100%;
+    }
+    .d_Cards {
+        flex-direction: column;
+        gap: 20px;
+        height: 1246px;
+        width: 100%;
+    }
+    .di_cards {
+        flex: 1 calc(100% - 20px);
+        height: 402px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .shahbaz {
+        width: 100%;
+    }
+    .khan {
+        display: block;
+        justify-items: center;
+        align-content: center;
+    }
+    .man {
+        display: none;
+    }
+    .frame240 {
+        height: 473px;
+    }
+    .m_frame {
+        width: 100%;
+        height: 433px;
+        gap: 30px;
+    }
+    .ee {
+        width: 100%;
+        justify-content: center;
+    }
+    .m_button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .ee > button {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .m_icon {
+        margin-left: auto ;
+    }
+    .m_text {
+        margin-right: auto;
+    }
+    .HOW_IT_WORKS {
+        gap: 30px;
+        height: fit-content;
+        align-items: center;
+    }
+    .h_cards {
+        height: 72.1%;
+        width: fit-content;
+        flex-direction: column;
+        gap: 20px;
+        width: 85%;
+    }
+    .h_card {
+        height: fit-content;
+        width: fit-content;
+        flex-direction: row;
+        width: 100%;
+    }
+    .h_desc {
+        align-items: start;
+        width: 198px;
+        gap: 10px;
+        height: fit-content;
+        padding: 20px 0px 20px 0px;
+    }
+    .h_daeh{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+    }
+    .h_bus {
+        height: fit-content;
+        font-size: 14px;
+    }
+    .h_bus > p {
+        width: fit-content;
+        display: inline;
+        display: flex;
+    }
+    .h_img {
+        height: 128px;
+        width: 128px;
+    }
+    .h_img > img {
+        height: 128px;
+        width: 128px;
+    }
+    .joinnow {
+        height: fit-content;
+    }
+    .j_subcribe {
+        flex-direction: column;
+        height: fit-content;
+        width: 85%;
+        background-color: transparent;
+    }
+    .j_description {
+        min-width: 100%;
+        gap: 40px;
+        height: fit-content;
+        align-items: unset;
+        justify-content: unset;
+    }
+    .j_photo {
+        min-width: 408px;
+        height: 326px;
+    }
+    .j_button {
+        height: fit-content;
+    }
+    .j_photo > img {
+        width: 100%;
+    }
+    .j_text {
+        height: 58.89px;
+    }
+    .j_butt {
+        min-height: 58.89px;
+    }
+    .j_butt > button {
+        height: 58.89px;
+        font-size: 16px ;
+    }
+    .footer {
+        width: 100%;
+        height: fit-content;
+        padding: 40px 0px 40px 0px;
+        gap: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .f_info {
+
+        margin-left:auto ;
+        margin-right: auto;
+    }
+    .f_subscribe {
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .egg {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        width: 100%;
+        gap: 20px;
+    }
+    .white {
+        position: unset;
+        height: 58.89px;
+    }
+    .purple {
+        position: unset;
+        height: 58.89px;
+        width: 100%;
+    }
+    .purple > button {
+        height: 58.89px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .f_frame {
+        width: 85%;
+    }
+}
