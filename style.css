@@ -6,16 +6,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    -webkit-tap-highlight-color: transparent;
-    -webkit-user-select: none;
-     -webkit-tap-highlight-color: transparent;
-    touch-action: manipulation;
-}
-*:focus{
-    outline: none;
-    box-shadow: none;
-    -webkit-tap-highlight-color: transparent;
-    -webkit-user-select: none;
      -webkit-tap-highlight-color: transparent;
     touch-action: manipulation;
 }
