@@ -49,6 +49,7 @@ body{
     position: relative;
     background-color: var(--secondary-color);
     font-family: "DM Sans", serif;
+    transition: background-color 0.3s ease-out, color 0.3s ease-out;
 }
 header {
     position: sticky;
@@ -66,6 +67,7 @@ header {
     height: fit-content;
     gap: 10px;
     align-items: center;
+    transition: background-color 0.3s ease-out, color 0.3s ease-out;
 }
 .hum {
     width: 30px;
